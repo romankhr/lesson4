@@ -56,8 +56,8 @@ public class LoginServlet extends HttpServlet {
             throws IOException {
 
         switch (user.getRole()) {
-            case USER: resp.sendRedirect(req.getContextPath() + "/user");
-            case ADMIN: resp.sendRedirect(req.getContextPath() + "/admin");
+            case USER: resp.sendRedirect(req.getContextPath() + "/user"); break;
+            case ADMIN: resp.sendRedirect(req.getContextPath() + "/admin"); break;
         }
     }
 }
